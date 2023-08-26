@@ -1,15 +1,19 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LIST_H_
+#define _LIST_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+size_t print_list(const list_t *h);
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
+ * struct list_t - a single linked list
+ * @str: a malloced string
+ * len: length of the string
+ * @next: a pointer to the structure node
  */
+
 typedef struct list_s
 {
 	char *str;
