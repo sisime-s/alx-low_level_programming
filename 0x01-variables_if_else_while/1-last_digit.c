@@ -13,17 +13,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if(n > 5)
+	if ((n % 10) > 5)
 	{
-	printf("n is greater than 5 ");
+	printf("%d is greater than %d\n ", n, n % 10);
 	}
-	else if(n == 0)
+	else if ((n % 10) < 6 && (n % 10) != 0)
 	{
-	printf("n is equal to 0");
+	printf("%d is equal to %d\n", n, n % 10);
 	}
 	else
 	{
-	printf("n is less than 6 & not equal to 0");
+	printf("%d is less than %d & not equal to 0\n", n, n % 10);
 	}
 	return (0);
 }
